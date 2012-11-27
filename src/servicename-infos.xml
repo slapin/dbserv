@@ -4,21 +4,18 @@
 	<interface name="ru.itetra.Database">
 		<annotation name="org.freedesktop.DBus.GLib.CSymbol" value="server"/>
 		<method name="setreg">
-		<arg type="v" name="name" direction="in" />
-		<arg type="v" name="value" direction="in" />
+			<arg type="v" name="name" direction="in" />
+			<arg type="v" name="value" direction="in" />
 		</method>
 		<method name="getreg">
-		<arg type="v" name="name" direction="in" />
-		<arg type="v" name="value" direction="out" />
+			<arg type="v" name="name" direction="in" />
+			<arg type="v" name="value" direction="out" />
 		</method>
 		<method name="select">
 		</method>
 		<method name="count">
 		</method>
 		<method name="delete">
-		</method>
-			<arg type="s" name="original" direction="in" />
-			<arg type="s" name="echo" direction="out" />
 		</method>
 		<!-- Add more methods/signals if you want -->
 	</interface>
